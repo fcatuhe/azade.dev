@@ -29,12 +29,9 @@ jobs:
       - name: ci
         run: bin/ci
 
-      - uses: actions/configure-pages@v6
-        id: pages
-
-      # The base URL is the custom domain once Pages has one, so canonical and hreflang links are absolute and right.
+      # Pages reports http until it enforces HTTPS, so the canonical and hreflang links take the domain from here.
       - name: build
-        run: bin/static-build --base "${{ steps.pages.outputs.base_url }}"
+        run: bin/static-build --base https://azade.dev
 
       - uses: actions/upload-pages-artifact@v5
         if: github.ref == 'refs/heads/main'
