@@ -1,0 +1,11 @@
+<header class="site-header">
+  <nav class="site-nav" aria-label="<%= t "nav.label" %>">
+    <%= link_to_page "index", label: "Azade 🐐", class: "site-nav-brand" %>
+    <ul class="site-nav-links">
+      <% %w[index francois].each do |slug| %>
+        <li><%= link_to_page slug, label_type: :nav, "aria-current": ("page" if on_page?(slug)) %></li>
+      <% end %>
+    </ul>
+    <%= render "layouts/locale_switcher" %>
+  </nav>
+</header>

@@ -1,0 +1,50 @@
+@layer reset, base, components;
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("Inter-Bold.woff2") format("woff2");
+}
+
+:root {
+  --coat: #1F1A17;
+  --coat-soft: #4A403A;
+  --coat-muted: #6E625A;
+  --cream: #F6F1E7;
+  --cream-deep: #ECE3D2;
+  --fawn: #A8642A;
+  --fawn-text: #8A4F1E;
+  --pine: #2F5D4A;
+  --card: #FFFCF6;
+  --line: #DDD2BF;
+
+  --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+
+  --text-xs: 0.75rem;
+  --text-s: 0.875rem;
+  --text-m: 1.125rem;
+  --text-l: 1.25rem;
+  --text-xl: 1.5rem;
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 5rem;
+
+  --measure: 68ch;
+  --gutter: clamp(1rem, 5vw, 2rem);
+}

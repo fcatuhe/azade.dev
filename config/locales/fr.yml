@@ -1,0 +1,8 @@
+fr:
+  nav:
+    label: "Site"
+  footer:
+    blog: "Blog"
+    source: "Code de ce site"
+    photo_html: "Photo : une chèvre des Pyrénées de la Ferme Bacotte, %{farm}, Saint-Sever."
+    license: "Code sous licence MIT."

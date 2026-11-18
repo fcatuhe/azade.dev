@@ -1,0 +1,44 @@
+@layer base {
+  html { font-size: 100%; }
+  @media (min-width: 100ch) {
+    html { font-size: 112.5%; }
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    background: var(--cream);
+    color: var(--coat);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+  }
+
+  main { flex: 1; }
+
+  a { color: inherit; }
+  a:hover { color: var(--fawn-text); }
+
+  a:not([class]) {
+    text-decoration-color: var(--fawn);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+
+  :is(a, button):focus-visible {
+    border-radius: 0.25ch;
+    outline: 2px solid var(--pine);
+    outline-offset: 2px;
+  }
+
+  ::selection { background: var(--fawn); color: var(--cream); }
+
+  :is(h1, h2, h3) {
+    font-family: var(--font-serif);
+    line-height: 1.2;
+    text-wrap: balance;
+  }
+
+  p { text-wrap: pretty; }
+}

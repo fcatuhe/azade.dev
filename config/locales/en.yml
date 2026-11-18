@@ -1,0 +1,8 @@
+en:
+  nav:
+    label: "Site"
+  footer:
+    blog: "Blog, in French"
+    source: "Source of this site"
+    photo_html: "Photo: a Pyrenean goat of Ferme Bacotte, %{farm}, Saint-Sever."
+    license: "Code under the MIT license."
